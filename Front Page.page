@@ -1,9 +1,28 @@
 # Daniil Iaitskov homepage
 
-  At last I decided to spend some time to discharge FB, github, blogger sites 
-and to create a homepage in an old school way - hosted on my own virtual machine.
+![](/me.jpg){ width=2cm }
 
-I picked **gitit** wiki engine, because I get again Haskell bug 10 years after university.
+At last I decided to spend some time to discharge FB, github, blogger sites  
+and to create a homepage in an old school way - hosted on my own virtual machine.     
+
+I picked **gitit** wiki engine,
+because I get again a Haskell bug 10 years after university.
+At first it is working.
+I can even upload pictures, but table and float support sucks.
+
+~~~ { .haskell }
+sort [] = []
+sort (h:t) = [y| y <- t, y <= h]  ++ [h] ++ [x| x <- t, x > h]
+
+data Free f a = Pure a | Free (f (Free f a))
+~~~
 
 
-![avatar](/me.jfif)
+## Site map
+
+- [Jokes]()
+- [Resume]()
+- [Home projects]()
+
+
+
